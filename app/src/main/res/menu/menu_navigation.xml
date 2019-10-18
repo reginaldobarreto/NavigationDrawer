@@ -2,14 +2,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <group android:checkableBehavior="single">
-        <item android:title="Inbox" android:icon="@drawable/ic_action_inbox"/>
-        <item android:title="Favorites" android:icon="@drawable/ic_action_favorite"/>
-        <item android:title="Sent" android:icon="@drawable/ic_action_sent"/>
+        <item android:title="@string/inbox" android:icon="@drawable/ic_action_inbox" android:id="@+id/menu_inbox"/>
+        <item android:title="@string/favorites" android:icon="@drawable/ic_action_favorite" android:id="@+id/menu_favorite"/>
+        <item android:title="@string/sent" android:icon="@drawable/ic_action_sent" android:id="@+id/menu_sent"/>
     </group>
-    <item android:title="Others" >
+    <item android:title="@string/others" >
         <menu >
-            <item android:title="Soam" android:icon="@drawable/ic_action_spam" />
-            <item android:title="Trash" android:icon="@drawable/ic_action_trash" />
+            <item android:title="@string/spam" android:icon="@drawable/ic_action_spam" android:id="@+id/menu_spam"/>
+            <item android:title="@string/trash" android:icon="@drawable/ic_action_trash" android:id="@+id/menu_trash"/>
         </menu>
     </item>
 </menu>

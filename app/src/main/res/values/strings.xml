@@ -4,4 +4,10 @@
     <string name="user_mail">reginaldo.barreto@gmail.com</string>
     <string name="open_drawer">open</string>
     <string name="close_drawer">close</string>
+    <string name="inbox">Inbox</string>
+    <string name="favorites">Favorites</string>
+    <string name="sent">Sent</string>
+    <string name="spam">Spam</string>
+    <string name="trash">Trash</string>
+    <string name="others">Others</string>
 </resources>
