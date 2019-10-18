@@ -2,4 +2,6 @@
     <string name="app_name">NavigationDrawer</string>
     <string name="user_name">Reginaldo Barreto</string>
     <string name="user_mail">reginaldo.barreto@gmail.com</string>
+    <string name="open_drawer">open</string>
+    <string name="clese_drawer">close</string>
 </resources>
