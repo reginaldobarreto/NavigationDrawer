@@ -4,8 +4,9 @@
 Esse aplicativo mostra a unificação do Drawer layout e do Navigation view
 ## Conhecimento aplicado
 * Butter Knife
-* xxxx
-* xxxx
+* Toolbar
+* DrawerLayout
+* NavigationView
 
 ## Screeshots
 
