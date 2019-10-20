@@ -21,13 +21,9 @@ import butterknife.ButterKnife;
 public class MainActivity extends AppCompatActivity {
 
 
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
-    @BindView(R.id.drawerLayout)
-    DrawerLayout drawerLayout;
-    @BindView(R.id.navigationView)
-    NavigationView navigationView;
-
+    @BindView(R.id.toolbar) Toolbar toolbar;
+    @BindView(R.id.drawerLayout) DrawerLayout drawerLayout;
+    @BindView(R.id.navigationView) NavigationView navigationView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         setSupportActionBar(toolbar);
 
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout, R.string.open_drawer, R.string.close_drawer);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar, R.string.open_drawer, R.string.close_drawer);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
@@ -64,16 +60,13 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     default:
                         return false;
-
                 }
 
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
         });
-
     }
-
 
     @Override
     public void onBackPressed() {
@@ -83,6 +76,5 @@ public class MainActivity extends AppCompatActivity {
         }else{
             super.onBackPressed();
         }
-
     }
 }
